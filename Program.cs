@@ -16,7 +16,7 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new contactTracingApp());
         }
     }
 }

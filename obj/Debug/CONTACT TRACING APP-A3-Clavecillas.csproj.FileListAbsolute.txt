@@ -3,9 +3,9 @@ C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Claveci
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\bin\Debug\CONTACT TRACING APP-A3-Clavecillas.pdb
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT TRACING APP-A3-Clavecillas.csproj.AssemblyReference.cache
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT TRACING APP-A3-Clavecillas.csproj.SuggestedBindingRedirects.cache
-C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT_TRACING_APP_A3_Clavecillas.Form1.resources
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT_TRACING_APP_A3_Clavecillas.Properties.Resources.resources
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT TRACING APP-A3-Clavecillas.csproj.GenerateResource.cache
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT TRACING APP-A3-Clavecillas.csproj.CoreCompileInputs.cache
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT TRACING APP-A3-Clavecillas.exe
 C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT TRACING APP-A3-Clavecillas.pdb
+C:\Users\Christian\Desktop\MS Visual Studio Files\CONTACT TRACING APP-A3-Clavecillas\obj\Debug\CONTACT_TRACING_APP_A3_Clavecillas.contactTracingApp.resources

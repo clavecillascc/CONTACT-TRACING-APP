@@ -11,9 +11,9 @@ using System.IO;
 
 namespace CONTACT_TRACING_APP_A3_Clavecillas
 {
-    public partial class Form1 : Form
+    public partial class contactTracingApp : Form
     {
-        public Form1()
+        public contactTracingApp()
         {
             InitializeComponent();
         }
@@ -72,6 +72,16 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
             file.Close();
 
             MessageBox.Show("Your information has been saved");
+
+            surnameTextBox.Clear();
+            firstNameTextBox.Clear();
+            dateTextBox.Clear();
+            ageTextBox.Clear();
+            genderTextBox.Clear();
+            emailTextBox.Clear();
+            phoneNumberTextBox.Clear();
+            timeinTextBox.Clear();
+            addressTextBox.Clear();
         }
     }
 }

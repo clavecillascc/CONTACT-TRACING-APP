@@ -1,6 +1,6 @@
 ﻿namespace CONTACT_TRACING_APP_A3_Clavecillas
 {
-    partial class Form1
+    partial class contactTracingApp
     {
         /// <summary>
         /// Required designer variable.
@@ -232,7 +232,7 @@
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(75, 23);
             this.testBtn.TabIndex = 99;
-            this.testBtn.Text = "test";
+            this.testBtn.Text = "Save";
             this.testBtn.UseVisualStyleBackColor = true;
             this.testBtn.Click += new System.EventHandler(this.testBtn_Click);
             // 
@@ -341,7 +341,7 @@
     "st two (2) weeks?";
             this.hadContact.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // contactTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -368,8 +368,9 @@
             this.Controls.Add(this.surnameTextBox);
             this.Controls.Add(this.surname);
             this.Controls.Add(this.contactTracingForm);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "contactTracingApp";
+            this.Text = "Contact Tracing Application";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.expGroupBox.ResumeLayout(false);
             this.expGroupBox.PerformLayout();
