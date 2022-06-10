@@ -16,5 +16,12 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
