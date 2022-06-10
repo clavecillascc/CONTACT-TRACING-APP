@@ -31,6 +31,43 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
             file.WriteLine("Age: " + ageTextBox.Text + "   Gender: " + genderTextBox.Text);
             file.WriteLine("Email: " + emailTextBox.Text + "   Phone Number: " + phoneNumberTextBox.Text);
             file.WriteLine("Address: " + addressTextBox.Text);
+            file.WriteLine("Experiencing: ");
+            if (expSoreThroat.Checked)
+            {
+                file.WriteLine("   Sore Throat");
+                expSoreThroat.Checked = false;
+            }
+            if (expBodyPains.Checked)
+            {
+                file.WriteLine("   Body Pains");
+                expBodyPains.Checked = false;
+            }
+            if (expHeadache.Checked)
+            {
+                file.WriteLine("   Headache");
+                expHeadache.Checked = false;
+            }
+            if (expFever.Checked)
+            {
+                file.WriteLine("   Fever for the past few days");
+                expFever.Checked = false;
+            }
+            file.WriteLine("Had: ");
+            if (hadContact.Checked)
+            {
+                file.WriteLine("   contact with anyone with fever, cough, colds, and sore throat in the past two (2) weeks");
+                hadContact.Checked = false;
+            }
+            if (hadTravelledOutsidePH.Checked)
+            {
+                file.WriteLine("   travelled outside of the Philippines in the last fourteen (14) days");
+                hadTravelledOutsidePH.Checked = false;
+            }
+            if (hadTravelledAroundNCR.Checked)
+            {
+                file.WriteLine("   travelled to any area in NCR aside from his/her home");
+                hadTravelledAroundNCR.Checked = false;
+            }
             file.WriteLine();
             file.Close();
 
