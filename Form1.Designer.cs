@@ -220,9 +220,10 @@
             this.testBtn.Location = new System.Drawing.Point(459, 415);
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(75, 23);
-            this.testBtn.TabIndex = 21;
+            this.testBtn.TabIndex = 99;
             this.testBtn.Text = "test";
             this.testBtn.UseVisualStyleBackColor = true;
+            this.testBtn.Click += new System.EventHandler(this.testBtn_Click);
             // 
             // Form1
             // 
