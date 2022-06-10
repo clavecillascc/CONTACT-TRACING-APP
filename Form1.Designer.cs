@@ -48,6 +48,17 @@
             this.address = new System.Windows.Forms.Label();
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.testBtn = new System.Windows.Forms.Button();
+            this.expGroupBox = new System.Windows.Forms.GroupBox();
+            this.expSoreThroat = new System.Windows.Forms.CheckBox();
+            this.expFever = new System.Windows.Forms.CheckBox();
+            this.expBodyPains = new System.Windows.Forms.CheckBox();
+            this.expHeadache = new System.Windows.Forms.CheckBox();
+            this.haveYou = new System.Windows.Forms.GroupBox();
+            this.hadTravelledAroundNCR = new System.Windows.Forms.CheckBox();
+            this.hadTravelledOutsidePH = new System.Windows.Forms.CheckBox();
+            this.hadContact = new System.Windows.Forms.CheckBox();
+            this.expGroupBox.SuspendLayout();
+            this.haveYou.SuspendLayout();
             this.SuspendLayout();
             // 
             // contactTracingForm
@@ -217,7 +228,7 @@
             // 
             // testBtn
             // 
-            this.testBtn.Location = new System.Drawing.Point(459, 415);
+            this.testBtn.Location = new System.Drawing.Point(459, 435);
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(75, 23);
             this.testBtn.TabIndex = 99;
@@ -225,11 +236,118 @@
             this.testBtn.UseVisualStyleBackColor = true;
             this.testBtn.Click += new System.EventHandler(this.testBtn_Click);
             // 
+            // expGroupBox
+            // 
+            this.expGroupBox.Controls.Add(this.expSoreThroat);
+            this.expGroupBox.Controls.Add(this.expFever);
+            this.expGroupBox.Controls.Add(this.expBodyPains);
+            this.expGroupBox.Controls.Add(this.expHeadache);
+            this.expGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expGroupBox.Location = new System.Drawing.Point(12, 187);
+            this.expGroupBox.Name = "expGroupBox";
+            this.expGroupBox.Size = new System.Drawing.Size(522, 94);
+            this.expGroupBox.TabIndex = 21;
+            this.expGroupBox.TabStop = false;
+            this.expGroupBox.Text = "Are you experiencing :";
+            // 
+            // expSoreThroat
+            // 
+            this.expSoreThroat.AutoSize = true;
+            this.expSoreThroat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expSoreThroat.Location = new System.Drawing.Point(6, 28);
+            this.expSoreThroat.Name = "expSoreThroat";
+            this.expSoreThroat.Size = new System.Drawing.Size(121, 24);
+            this.expSoreThroat.TabIndex = 22;
+            this.expSoreThroat.Text = "Sore Throat?";
+            this.expSoreThroat.UseVisualStyleBackColor = true;
+            // 
+            // expFever
+            // 
+            this.expFever.AutoSize = true;
+            this.expFever.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expFever.Location = new System.Drawing.Point(272, 58);
+            this.expFever.Name = "expFever";
+            this.expFever.Size = new System.Drawing.Size(228, 24);
+            this.expFever.TabIndex = 25;
+            this.expFever.Text = "Fever for the past few days?";
+            this.expFever.UseVisualStyleBackColor = true;
+            // 
+            // expBodyPains
+            // 
+            this.expBodyPains.AutoSize = true;
+            this.expBodyPains.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expBodyPains.Location = new System.Drawing.Point(6, 58);
+            this.expBodyPains.Name = "expBodyPains";
+            this.expBodyPains.Size = new System.Drawing.Size(116, 24);
+            this.expBodyPains.TabIndex = 24;
+            this.expBodyPains.Text = "Body Pains?";
+            this.expBodyPains.UseVisualStyleBackColor = true;
+            // 
+            // expHeadache
+            // 
+            this.expHeadache.AutoSize = true;
+            this.expHeadache.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expHeadache.Location = new System.Drawing.Point(272, 28);
+            this.expHeadache.Name = "expHeadache";
+            this.expHeadache.Size = new System.Drawing.Size(111, 24);
+            this.expHeadache.TabIndex = 23;
+            this.expHeadache.Text = "Headache?";
+            this.expHeadache.UseVisualStyleBackColor = true;
+            // 
+            // haveYou
+            // 
+            this.haveYou.Controls.Add(this.hadTravelledAroundNCR);
+            this.haveYou.Controls.Add(this.hadTravelledOutsidePH);
+            this.haveYou.Controls.Add(this.hadContact);
+            this.haveYou.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.haveYou.Location = new System.Drawing.Point(12, 287);
+            this.haveYou.Name = "haveYou";
+            this.haveYou.Size = new System.Drawing.Size(522, 142);
+            this.haveYou.TabIndex = 26;
+            this.haveYou.TabStop = false;
+            this.haveYou.Text = "Have you :";
+            // 
+            // hadTravelledAroundNCR
+            // 
+            this.hadTravelledAroundNCR.AutoSize = true;
+            this.hadTravelledAroundNCR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hadTravelledAroundNCR.Location = new System.Drawing.Point(7, 108);
+            this.hadTravelledAroundNCR.Name = "hadTravelledAroundNCR";
+            this.hadTravelledAroundNCR.Size = new System.Drawing.Size(389, 24);
+            this.hadTravelledAroundNCR.TabIndex = 29;
+            this.hadTravelledAroundNCR.Text = "travelled to any area in NCR aside from your home?";
+            this.hadTravelledAroundNCR.UseVisualStyleBackColor = true;
+            // 
+            // hadTravelledOutsidePH
+            // 
+            this.hadTravelledOutsidePH.AutoSize = true;
+            this.hadTravelledOutsidePH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hadTravelledOutsidePH.Location = new System.Drawing.Point(6, 78);
+            this.hadTravelledOutsidePH.Name = "hadTravelledOutsidePH";
+            this.hadTravelledOutsidePH.Size = new System.Drawing.Size(481, 24);
+            this.hadTravelledOutsidePH.TabIndex = 28;
+            this.hadTravelledOutsidePH.Text = "travelled outside of the Philippines in the last fourteen (14) days?";
+            this.hadTravelledOutsidePH.UseVisualStyleBackColor = true;
+            // 
+            // hadContact
+            // 
+            this.hadContact.AutoSize = true;
+            this.hadContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hadContact.Location = new System.Drawing.Point(6, 28);
+            this.hadContact.Name = "hadContact";
+            this.hadContact.Size = new System.Drawing.Size(471, 44);
+            this.hadContact.TabIndex = 27;
+            this.hadContact.Text = "had any contact with anyone with fever, cough, colds, and sore \r\nthroat in the pa" +
+    "st two (2) weeks?";
+            this.hadContact.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 450);
+            this.ClientSize = new System.Drawing.Size(547, 475);
+            this.Controls.Add(this.haveYou);
+            this.Controls.Add(this.expGroupBox);
             this.Controls.Add(this.testBtn);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.address);
@@ -253,6 +371,10 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.expGroupBox.ResumeLayout(false);
+            this.expGroupBox.PerformLayout();
+            this.haveYou.ResumeLayout(false);
+            this.haveYou.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +402,15 @@
         private System.Windows.Forms.Label address;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.Button testBtn;
+        private System.Windows.Forms.GroupBox expGroupBox;
+        private System.Windows.Forms.CheckBox expSoreThroat;
+        private System.Windows.Forms.CheckBox expFever;
+        private System.Windows.Forms.CheckBox expBodyPains;
+        private System.Windows.Forms.CheckBox expHeadache;
+        private System.Windows.Forms.GroupBox haveYou;
+        private System.Windows.Forms.CheckBox hadTravelledAroundNCR;
+        private System.Windows.Forms.CheckBox hadTravelledOutsidePH;
+        private System.Windows.Forms.CheckBox hadContact;
     }
 }
 
