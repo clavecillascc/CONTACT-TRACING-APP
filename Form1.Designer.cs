@@ -57,6 +57,9 @@
             this.hadTravelledAroundNCR = new System.Windows.Forms.CheckBox();
             this.hadTravelledOutsidePH = new System.Windows.Forms.CheckBox();
             this.hadContact = new System.Windows.Forms.CheckBox();
+            this.displayLabel = new System.Windows.Forms.Label();
+            this.displayRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.displayBtn = new System.Windows.Forms.Button();
             this.expGroupBox.SuspendLayout();
             this.haveYou.SuspendLayout();
             this.SuspendLayout();
@@ -341,11 +344,43 @@
     "st two (2) weeks?";
             this.hadContact.UseVisualStyleBackColor = true;
             // 
+            // displayLabel
+            // 
+            this.displayLabel.AutoSize = true;
+            this.displayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.displayLabel.Location = new System.Drawing.Point(683, 9);
+            this.displayLabel.Name = "displayLabel";
+            this.displayLabel.Size = new System.Drawing.Size(179, 37);
+            this.displayLabel.TabIndex = 100;
+            this.displayLabel.Text = "Information(s)";
+            this.displayLabel.UseCompatibleTextRendering = true;
+            // 
+            // displayRichTextBox
+            // 
+            this.displayRichTextBox.Location = new System.Drawing.Point(540, 46);
+            this.displayRichTextBox.Name = "displayRichTextBox";
+            this.displayRichTextBox.Size = new System.Drawing.Size(464, 383);
+            this.displayRichTextBox.TabIndex = 101;
+            this.displayRichTextBox.Text = "";
+            // 
+            // displayBtn
+            // 
+            this.displayBtn.Location = new System.Drawing.Point(929, 435);
+            this.displayBtn.Name = "displayBtn";
+            this.displayBtn.Size = new System.Drawing.Size(75, 23);
+            this.displayBtn.TabIndex = 102;
+            this.displayBtn.Text = "Display";
+            this.displayBtn.UseVisualStyleBackColor = true;
+            // 
             // contactTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 475);
+            this.ClientSize = new System.Drawing.Size(1012, 468);
+            this.Controls.Add(this.displayBtn);
+            this.Controls.Add(this.displayRichTextBox);
+            this.Controls.Add(this.displayLabel);
             this.Controls.Add(this.haveYou);
             this.Controls.Add(this.expGroupBox);
             this.Controls.Add(this.testBtn);
@@ -412,6 +447,9 @@
         private System.Windows.Forms.CheckBox hadTravelledAroundNCR;
         private System.Windows.Forms.CheckBox hadTravelledOutsidePH;
         private System.Windows.Forms.CheckBox hadContact;
+        private System.Windows.Forms.Label displayLabel;
+        private System.Windows.Forms.RichTextBox displayRichTextBox;
+        private System.Windows.Forms.Button displayBtn;
     }
 }
 
