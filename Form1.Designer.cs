@@ -372,6 +372,7 @@
             this.displayBtn.TabIndex = 102;
             this.displayBtn.Text = "Display";
             this.displayBtn.UseVisualStyleBackColor = true;
+            this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
             // 
             // contactTracingApp
             // 

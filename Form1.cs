@@ -83,5 +83,13 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
             timeinTextBox.Clear();
             addressTextBox.Clear();
         }
+
+        private void displayBtn_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Christian\Desktop\OOP\contact tracing informations.txt";
+            StreamReader reader = new StreamReader(path);
+            string contactTracingProfiles = reader.ReadToEnd();
+            displayRichTextBox.Text = contactTracingProfiles.ToString();
+        }
     }
 }
