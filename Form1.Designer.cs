@@ -383,6 +383,7 @@
             this.scanBtn.TabIndex = 40;
             this.scanBtn.Text = "Scan QR Code";
             this.scanBtn.UseVisualStyleBackColor = true;
+            this.scanBtn.Click += new System.EventHandler(this.scanBtn_Click);
             // 
             // contactTracingApp
             // 

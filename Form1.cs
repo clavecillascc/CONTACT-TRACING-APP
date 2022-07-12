@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace CONTACT_TRACING_APP_A3_Clavecillas
 {
@@ -91,6 +92,20 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
             string contactTracingProfiles = reader.ReadToEnd();
             displayRichTextBox.Text = contactTracingProfiles.ToString();
             reader.Close();
+        }
+
+        private void scanBtn_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = @"C:\Program Files (x86)\CodeTwo\QR Code Desktop Reader & Generator\CodeTwoQRCode.exe";
+            start.WindowStyle = ProcessWindowStyle.Hidden;
+            start.CreateNoWindow = true;
+            int exitCode;
+            using (Process proc = Process.Start(start))
+            {
+                proc.WaitForExit();
+                exitCode = proc.ExitCode;
+            }
         }
     }
 }
