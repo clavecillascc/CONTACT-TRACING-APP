@@ -60,6 +60,7 @@
             this.displayLabel = new System.Windows.Forms.Label();
             this.displayRichTextBox = new System.Windows.Forms.RichTextBox();
             this.displayBtn = new System.Windows.Forms.Button();
+            this.scanBtn = new System.Windows.Forms.Button();
             this.expGroupBox.SuspendLayout();
             this.haveYou.SuspendLayout();
             this.SuspendLayout();
@@ -234,7 +235,7 @@
             this.testBtn.Location = new System.Drawing.Point(459, 435);
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(75, 23);
-            this.testBtn.TabIndex = 99;
+            this.testBtn.TabIndex = 27;
             this.testBtn.Text = "Save";
             this.testBtn.UseVisualStyleBackColor = true;
             this.testBtn.Click += new System.EventHandler(this.testBtn_Click);
@@ -352,7 +353,7 @@
             this.displayLabel.Location = new System.Drawing.Point(683, 9);
             this.displayLabel.Name = "displayLabel";
             this.displayLabel.Size = new System.Drawing.Size(179, 37);
-            this.displayLabel.TabIndex = 100;
+            this.displayLabel.TabIndex = 28;
             this.displayLabel.Text = "Information(s)";
             this.displayLabel.UseCompatibleTextRendering = true;
             // 
@@ -361,7 +362,7 @@
             this.displayRichTextBox.Location = new System.Drawing.Point(540, 46);
             this.displayRichTextBox.Name = "displayRichTextBox";
             this.displayRichTextBox.Size = new System.Drawing.Size(464, 383);
-            this.displayRichTextBox.TabIndex = 101;
+            this.displayRichTextBox.TabIndex = 29;
             this.displayRichTextBox.Text = "";
             // 
             // displayBtn
@@ -369,16 +370,26 @@
             this.displayBtn.Location = new System.Drawing.Point(929, 435);
             this.displayBtn.Name = "displayBtn";
             this.displayBtn.Size = new System.Drawing.Size(75, 23);
-            this.displayBtn.TabIndex = 102;
+            this.displayBtn.TabIndex = 30;
             this.displayBtn.Text = "Display";
             this.displayBtn.UseVisualStyleBackColor = true;
             this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
+            // 
+            // scanBtn
+            // 
+            this.scanBtn.Location = new System.Drawing.Point(12, 436);
+            this.scanBtn.Name = "scanBtn";
+            this.scanBtn.Size = new System.Drawing.Size(99, 23);
+            this.scanBtn.TabIndex = 40;
+            this.scanBtn.Text = "Scan QR Code";
+            this.scanBtn.UseVisualStyleBackColor = true;
             // 
             // contactTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 468);
+            this.ClientSize = new System.Drawing.Size(1012, 471);
+            this.Controls.Add(this.scanBtn);
             this.Controls.Add(this.displayBtn);
             this.Controls.Add(this.displayRichTextBox);
             this.Controls.Add(this.displayLabel);
@@ -451,6 +462,7 @@
         private System.Windows.Forms.Label displayLabel;
         private System.Windows.Forms.RichTextBox displayRichTextBox;
         private System.Windows.Forms.Button displayBtn;
+        private System.Windows.Forms.Button scanBtn;
     }
 }
 

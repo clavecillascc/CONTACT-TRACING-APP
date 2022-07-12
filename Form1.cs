@@ -90,6 +90,7 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
             StreamReader reader = new StreamReader(path);
             string contactTracingProfiles = reader.ReadToEnd();
             displayRichTextBox.Text = contactTracingProfiles.ToString();
+            reader.Close();
         }
     }
 }
