@@ -112,6 +112,14 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
                     HiddenListBox.Items.Add(ln.Trim());
                 }
 
+                surnameTextBox.Text = lines[0];
+                firstNameTextBox.Text = lines[1];
+                ageTextBox.Text = lines[2];
+                genderTextBox.Text = lines[3];
+                emailTextBox.Text = lines[4];
+                phoneNumberTextBox.Text = lines[5];
+                addressTextBox.Text = lines[6];
+
                 exitCode = proc.ExitCode;
             }
         }
