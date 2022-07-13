@@ -120,6 +120,8 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
                 phoneNumberTextBox.Text = lines[5];
                 addressTextBox.Text = lines[6];
 
+                Clipboard.Clear();
+
                 exitCode = proc.ExitCode;
             }
         }
