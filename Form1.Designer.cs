@@ -61,6 +61,7 @@
             this.displayRichTextBox = new System.Windows.Forms.RichTextBox();
             this.displayBtn = new System.Windows.Forms.Button();
             this.scanBtn = new System.Windows.Forms.Button();
+            this.HiddenListBox = new System.Windows.Forms.ListBox();
             this.expGroupBox.SuspendLayout();
             this.haveYou.SuspendLayout();
             this.SuspendLayout();
@@ -385,11 +386,20 @@
             this.scanBtn.UseVisualStyleBackColor = true;
             this.scanBtn.Click += new System.EventHandler(this.scanBtn_Click);
             // 
+            // HiddenListBox
+            // 
+            this.HiddenListBox.FormattingEnabled = true;
+            this.HiddenListBox.Location = new System.Drawing.Point(13, 477);
+            this.HiddenListBox.Name = "HiddenListBox";
+            this.HiddenListBox.Size = new System.Drawing.Size(270, 43);
+            this.HiddenListBox.TabIndex = 41;
+            // 
             // contactTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 471);
+            this.ClientSize = new System.Drawing.Size(1012, 468);
+            this.Controls.Add(this.HiddenListBox);
             this.Controls.Add(this.scanBtn);
             this.Controls.Add(this.displayBtn);
             this.Controls.Add(this.displayRichTextBox);
@@ -464,6 +474,7 @@
         private System.Windows.Forms.RichTextBox displayRichTextBox;
         private System.Windows.Forms.Button displayBtn;
         private System.Windows.Forms.Button scanBtn;
+        private System.Windows.Forms.ListBox HiddenListBox;
     }
 }
 

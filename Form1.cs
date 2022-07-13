@@ -104,6 +104,14 @@ namespace CONTACT_TRACING_APP_A3_Clavecillas
             using (Process proc = Process.Start(start))
             {
                 proc.WaitForExit();
+
+                string QRinfo = Clipboard.GetText();
+                string[] lines = QRinfo.Split('\n');
+                foreach (string ln in lines)
+                {
+                    HiddenListBox.Items.Add(ln.Trim());
+                }
+
                 exitCode = proc.ExitCode;
             }
         }
